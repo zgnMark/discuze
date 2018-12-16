@@ -1,0 +1,30 @@
+*{
+	margin:0 auto;
+	padding:0px;
+}
+body, input, button, select, textarea ,table{
+	font: 12px/1.5 Tahoma,'Microsoft Yahei','Simsun';
+	color: #444;
+}
+h2, h3, h4, h5, h6 {
+    font-size: 1em;
+}
+li {
+	list-style: none;
+}
+span {
+	color: #ccc;
+}
+a{
+	font:12px;color: #369;text-decoration: none;
+}
+/*link:连接平常的状态
+visited:连接被访问过之后
+hover:鼠标放到连接上的时候
+active:连接被按下的时候 */
+a:link {color:#369;}
+/*a:visited {color:black;}*/
+a:hover{ text-decoration:underline;}
+/*左浮动，右浮动*/
+.fr{float:right;}
+.fl{float:left;}

@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="<?= WEB_SITE ?>public/css/search.css" />
+	</head>
+	<body>
+		<div class="top"></div>
+		<div class="head">
+			<img class="ott" src="<?= WEB_SITE ?>public/img/ott.jpg" />
+			<div class="logo">
+				<h1>小窝计划</h1>
+				<h3>home plan</h3>
+			</div>
+			<input type="text" />
+				<button class="">搜索</button>
+			<div class="resl"></div>
+			<a href="index.php">返回首页</a>
+		</div>
+		<div class="body">
+			<div class="forum_nav1" style="height: 20;">
+				<ul class="fr">
+					<li class="fl part_page" ><a href="search.php?page=1&&search=<?=$search;?>">第一页</a></li>
+					<li class="fl part_page" ><a href="search.php?page=<?=$prev;?>&&search=<?=$search;?>">上一页</a></li>
+					<li class="fl part_page">
+						<?php foreach ($arr3[0] as $val):?>
+							<a href="search.php?page=<?=$val;?>&&search=<?=$search;?>"><?=$val;?></a>
+						<?php endforeach;?>
+					</li>
+					<li class="fl part_page" ><a href="search.php?page=<?=$next;?>&&search=<?=$search;?>">下一页</a></li>
+					<li class="fl part_page" ><a href="search.php?page=<?=$pagecount;?>&&search=<?=$search;?>">尾页</a></li>
+				</ul>
+			</div> 
+			<div>
+			<ul>
+				<?php if ((empty($row1) || $search == "")):?>
+				<li>
+					<h3>
+						<a href="">没有查到结果！</a>
+					</h3>
+				</li>
+				<?php endif;?>
+
+				<?php if ((!empty($row1)&&!empty($search))):?>
+					<?php foreach ($row1 as $val):?>
+					<li class="ol">
+						<h3>
+							<a href="action.php?id=<?=$val['id'];?>">
+								<?=$val['title'];?>
+							</a>
+						</h3>
+						<p><?=$val['replycount'];?> 个回复 - <?=$val['hits'];?> 次查看</p>
+						<p><?=$val['content'];?></p>
+						<p><?= date('Y-m-d H:i:s', $val['addtime']) ?></p>
+					</li>
+					<?php endforeach;?>
+				<?php endif;?>		
+			</ul>
+			</div>
+		</div>
+		<div class="bottom"></div>
+	</body>	
+</html>

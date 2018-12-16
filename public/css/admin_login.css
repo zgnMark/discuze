@@ -1,0 +1,26 @@
+
+body,span{
+	text-align: center; 
+	background: #fff;
+	line-height: 22px;
+    margin: 2px 0px;
+    height: 22px;
+    font-size: 14px;
+}
+table{
+	margin: 200px auto;
+}
+p{
+	padding:0 10 0 5;
+	font-weight: 700;
+}
+select{
+	width:173px;
+	height:21px;
+}
+.Dis{
+	color:gold;
+}
+.introduce{
+	font-size:14px;
+}

@@ -1,0 +1,27 @@
+.plate{
+	width:960px;
+	height: 33px; 
+	border:1px solid #C2D5E3;
+    background: #E5EDF2 ;
+    font-size: 0.6rem;
+    color: #999;
+}
+.content{
+	width: 960px;
+}
+.inf_option{
+	width:500px;
+	height:30px;
+	margin:20 auto;
+	padding-bottom:20px;
+	border-bottom:1px dotted #999;
+}
+.inf_option input{
+	float: right;
+	width: 300;
+	height: 30px;
+	margin-right: 50px;
+}
+.inf_option span{
+	margin-left: 50px;
+}

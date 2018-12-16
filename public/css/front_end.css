@@ -1,0 +1,89 @@
+.top {
+    width: 100%;
+    border-bottom: 1px solid #CDCDCD;
+    background: #F2F2F2;
+    line-height: 28px;
+}
+.top_box {
+	width:960px;
+	color:#333;
+	padding:0 4;
+}
+.top_img {
+	width:960px;
+}
+.head {
+	width: 960px;
+	height: 100px;
+}
+.discuz{
+	width: 100px;
+}
+.main {
+	width: 960px;
+}
+.nav{
+	width: 960px;
+	height: 33px;
+	background: #2B7ACD;
+	border-radius: 10px;
+}
+.nav li{
+	font-size: 14px;
+	float: left;
+	padding: 5 10px;
+	border-right: 1px solid #999;
+}
+.nav a{
+	color: #fff;
+	font-weight: 800;
+}
+.nav_select{
+	width: 150;
+	height: 33;
+	background: #fff;
+	color: #2B7ACD;
+	font-size: 14px;
+	font-weight:800;
+	margin-left: 120px;
+}
+.search{
+	width: 960;
+    height: 42px;
+    line-height: 42px;
+    border-top: 1px solid #FFF;
+    border-radius: 10px;
+    border-bottom: 1px solid #E9EFF5;
+    background: #E8EFF5;
+}
+.search_input{
+	margin: 5 0 0 10;
+	width: 300;
+	height: 30;
+}
+.search_input2{
+	margin: 5 10;
+	width: 60;
+	height: 30;
+}
+.search li{
+	float: left;
+	padding-left: 10px;
+}
+.path{
+	width: 960px;
+	height: 15px;
+	margin: 5 auto;
+}
+.end{
+	margin-top: 20px;
+	width: 960;
+	height: 20px;
+}
+.submit{
+	width: 100px;
+	height: 30px;
+	margin-top: 50px;
+	color: #fff;s
+	background: #C2D5E3;
+}

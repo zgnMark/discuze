@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>登录管理中心</title>
+		<meta charset=utf-8 />
+		<link rel="stylesheet" type="text/css" href="{(WEB_SITE)}public/css/admin_login.css" />
+	</head>
+	<a style="position: absolute; top:20px;right: 20px;" href="action.php?action=exit"> 退出</a>
+	<body>
+	<table class="">
+	  <tr>
+		<td style="width:341px ;height:152px; border-right:solid;" >
+		  <h1><span class="Dis"  >Discuz!  </span>管理中心</h1>
+		  <p class="introduce">discuz! 是 <a>腾讯</a> 旗下 <a>comsenz</a> 
+		  公司推出的以社区为基础的专业建站平台，帮助网站实现一站式服务。</p></td>
+		<td>
+		<form  method="post"  action="admin_index.php?skip=login" >
+			<p>用户名: <input  type="text" name="username"></p>
+			<p>密　码: <input type="password" name="password" /></p>
+			<p>提　问: 
+				<select> 
+					<option selected value="0">无安全提问</option>
+					<option value="1">母亲的名字</option> 
+					<option value="2">爷爷的名字</option>
+					<option value="3">父亲出生的城市</option>
+					<option value="4">你其中一位老师的名字</option>
+					<option value="5">你个人计算机的型号</option>
+					<option value="6">你最喜欢的餐馆名称</option>
+					<option value="7">驾驶执照最后四位数字</option>
+				</select> 
+			</p>
+			<p >回　答: <input  type="text" ></p>
+			<div class="ident">
+						<span class ="fl" >验证码:</span>
+						<input class="fl" style="margin-bottom:10px;width: 100px;height: 28px;" placeholder="请输入下图文字" type="text" name="code" required="没填" />
+			</div>
+			<img class="fl" src="{(WEB_SITE)}captcha.php" onclick="this.src=this.src+'?abc='+Math.random();" />
+			<p ><input type="submit" value="登陆" name="login"></p>
+						{if ($flag=='code1')} <p>验证码错啦</p>{/if}
+						{if ($flag=='user')} <p>别瞎蒙，服务器崩溃了你负责啊。(ーー゛)</p>{/if}
+						{if ($flag=='undertype')} <p>你不是管理员(ーー゛)</p>{/if}
+						{if ($flag=='pass')} <p>密码！密码错啦！</p>{/if}
+		</form>
+		</td></tr>
+	</table>
+	<table>
+			<tr>
+				<td class="footer" colspan="2">
+					<div>
+						<p>powered by <a href="http://www.drscuz.net/" target=_blank>discuz!</a></p>
+						<p>© 2017 <a href="http://www.comsenz.com/" target=_blank>comsenz</a></p>
+					</div>
+				</td>
+			</tr>
+	</table>
+	</body>
+</html>

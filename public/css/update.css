@@ -1,0 +1,42 @@
+.main{
+	height: 500px;
+
+}
+.plate{
+	width:140px;
+	height: 500px; 
+	border:1px solid #C2D5E3;
+	border-radius: 10px;
+    background: #E5EDF2 ;
+}
+.content{
+	width:810px;
+	height: 500px;
+	border-radius: 6px;
+	border:1px solid #C2D5E3;
+}
+.plate li{
+	padding: 5px;
+}
+.content ul{
+	width:800px;
+}
+.content li{
+	background: #fff;
+	padding: 5px;
+	margin: 5 10px;
+	font-weight: 800;
+	
+}
+.new_photo{
+	width: 200;
+	height: 200;
+	border: 1px solid #C2D5E3;
+}
+.content table{
+	padding: 20px;
+}
+.content span{
+	color: red;
+	float: right;
+}
